@@ -1,13 +1,372 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>amplify-landing</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Del Rey - Lentes de Alta Calidad</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ÓPTICA DEL REY</div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">Visión clara,<br>estilo perfecto</h1>
+            <p class="hero-subtitle">Descubre la excelencia en lentes graduados, armazones de diseño y filtros de última generación para cuidar tu vista con elegancia.</p>
+            <a href="#productos" class="cta-button">Explorar productos</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Desliza</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Armazones y lentes de las mejores marcas internacionales con garantía de durabilidad.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Filtros de luz azul, antirreflejantes y lentes progresivos de última generación.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Asesoría Personalizada</h3>
+                    <p>Nuestro equipo de expertos te guiará para encontrar la solución perfecta para tu vista.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Quiénes somos</h2>
+                    <div class="about-description">
+                        <h3>Nuestra Misión</h3>
+                        <p>En Óptica Del Rey nos dedicamos a proporcionar soluciones visuales de la más alta calidad, combinando tecnología de vanguardia con un servicio personalizado que garantiza la satisfacción total de nuestros clientes.</p>
+                        
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser la óptica líder en innovación y excelencia, reconocida por ofrecer productos premium y una experiencia de compra excepcional que transforma la manera en que nuestros clientes ven el mundo.</p>
+                        
+                        <h3>Nuestra Historia</h3>
+                        <p>Desde 2010, Óptica Del Rey ha sido sinónimo de calidad y confianza. Comenzamos como un pequeño local familiar y hemos crecido hasta convertirnos en referente del sector óptico, manteniendo siempre nuestro compromiso con la excelencia y el trato cercano.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=600&width=500" alt="Interior Óptica Del Rey">
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <h3 class="team-title">Nuestro Equipo</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Dra. María González">
+                        </div>
+                        <h4>Dra. María González</h4>
+                        <p>Optometrista Senior</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Lic. Carlos Ramírez">
+                        </div>
+                        <h4>Lic. Carlos Ramírez</h4>
+                        <p>Especialista en Lentes</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Ana Martínez">
+                        </div>
+                        <h4>Ana Martínez</h4>
+                        <p>Asesora de Estilo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <p class="section-subtitle">Descubre nuestra selección premium de lentes y armazones</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Armazones Premium">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Armazones de Diseño</h3>
+                        <p>Colección exclusiva de armazones de las mejores marcas internacionales. Materiales premium y diseños únicos.</p>
+                        <div class="product-price">Desde $2,300</div>
+                        <ul class="product-features">
+                            <li>Materiales de alta calidad</li>
+                            <li>Diseños exclusivos</li>
+                            <li>Garantía extendida</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Lentes Graduados">
+                        <div class="product-badge">Recomendado</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lentes Graduados</h3>
+                        <p>Lentes oftálmicos con la graduación exacta que necesitas. Tecnología de precisión para una visión perfecta.</p>
+                        <div class="product-price">Desde $2,800</div>
+                        <ul class="product-features">
+                            <li>Medición computarizada</li>
+                            <li>Lentes antirreflejantes</li>
+                            <li>Protección UV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Filtros Especiales">
+                        <div class="product-badge">Nuevo</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtros Especiales</h3>
+                        <p>Protección avanzada contra luz azul, fotocromáticos y polarizados. Cuida tus ojos de la fatiga digital.</p>
+                        <div class="product-price">Desde $3,200</div>
+                        <ul class="product-features">
+                            <li>Filtro luz azul</li>
+                            <li>Lentes fotocromáticos</li>
+                            <li>Polarizados premium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Lentes Progresivos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lentes Progresivos</h3>
+                        <p>Solución multifocal sin líneas visibles. Visión nítida a todas las distancias con la última tecnología.</p>
+                        <div class="product-price">Desde $4,000</div>
+                        <ul class="product-features">
+                            <li>Tecnología digital</li>
+                            <li>Transición suave</li>
+                            <li>Adaptación garantizada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <p class="section-subtitle">Explora nuestra colección y espacios</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Colección Premium">
+                    <div class="gallery-overlay">
+                        <h3>Colección Premium</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Armazones de Diseño">
+                    <div class="gallery-overlay">
+                        <h3>Armazones Exclusivos</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Área de Consulta">
+                    <div class="gallery-overlay">
+                        <h3>Área de Consulta</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Lentes de Sol">
+                    <div class="gallery-overlay">
+                        <h3>Lentes de Sol</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Tecnología Avanzada">
+                    <div class="gallery-overlay">
+                        <h3>Tecnología Avanzada</h3>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-large">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Nuestro Espacio">
+                    <div class="gallery-overlay">
+                        <h3>Nuestro Espacio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="contact-description">¿Tienes preguntas? Estamos aquí para ayudarte. Agenda tu cita o visítanos en nuestra tienda.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Principal 123, Centro<br>Ciudad de México, CP 06000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+52 55 1234 5678<br>Lun - Sáb: 10:00 - 20:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@opticadelrey.com<br>ventas@opticadelrey.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Envíanos un mensaje</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="cita">Agendar cita</option>
+                            <option value="producto">Información de producto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">ÓPTICA DEL REY</h3>
+                    <p>Visión clara, estilo perfecto. Tu salud visual es nuestra prioridad.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#000" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="#000"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <ul class="footer-links">
+                        <li>Lunes - Viernes: 10:00 - 20:00</li>
+                        <li>Sábado: 10:00 - 18:00</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul class="footer-links">
+                        <li>Av. Principal 123, Centro</li>
+                        <li>Ciudad de México, CP 06000</li>
+                        <li>Tel: +52 55 1234 5678</li>
+                        <li>info@opticadelrey.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Óptica Del Rey. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+</body>
 </html>
